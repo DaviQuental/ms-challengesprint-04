@@ -1,4 +1,4 @@
 export * from './Global.context'
 
-// should export product context 
+export * from './product/Product.context'
 export * from './email/Email.context'

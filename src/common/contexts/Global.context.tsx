@@ -2,6 +2,7 @@ import React, { ReactNode } from 'react';
 import { QueryClient, QueryClientProvider } from 'react-query'
 
 import { EmailContextProvider } from '.'
+import { ProductContextProvider } from './product/Product.context';
 
 interface GlobalContextProviderTypes {
   children: ReactNode
@@ -14,7 +15,9 @@ const queryClient = new QueryClient({
 export const GlobalContextProvider: React.FC<GlobalContextProviderTypes> = ({ children }) => {
   return (
     <QueryClientProvider client={queryClient}>
-      <EmailContextProvider>{children}</EmailContextProvider>
+      <ProductContextProvider>
+        <EmailContextProvider>{children}</EmailContextProvider>
+      </ProductContextProvider>
     </QueryClientProvider>
   )
 } 

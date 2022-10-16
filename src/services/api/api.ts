@@ -1,14 +1,21 @@
 import axios from "axios"
 import { serviceInterceptors } from "../services.interceptors"
 
-const api = axios.create({ 
+const apiEmail = axios.create({ 
   baseURL: 'http://localhost:8081',
-  // withCredentials: true,
   headers: {
     'Access-Control-Allow-Origin': '*'
   }
 })
-serviceInterceptors(api)
+serviceInterceptors(apiEmail)
 
-export { api }
+const apiProduct = axios.create({ 
+  baseURL: 'http://localhost:8082',
+  headers: {
+    'Access-Control-Allow-Origin': '*'
+  }
+})
+serviceInterceptors(apiProduct)
+
+export { apiEmail, apiProduct }
 export * from "./lib"
