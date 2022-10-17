@@ -2,10 +2,17 @@
 
 > Front-End para consumir todos os E-mails enviados e Produtos cadastrados no Sistema.
 
+## ⚙️ Informações técnicas
+
+* Todo o projeto foi desenvolvido em React, utlizando TypeScript
+* Para estilização das páginas e criação dos componentes, foi utilizado o Styled Components
+* Para consumo das APIs foi utlizado o Axios
+
 ## 👨‍💻 Como executar o projeto
 
 * Baixar e executar as APIs de <a href="https://github.com/i-grr/api-sendmail-challengesprint">E-mail</a> e <a href="https://github.com/i-grr/api-produtos-challengesprint">Produto</a>.
 * Clonar o Projeto em sua máquina
+* Instalar o <a href="https://nodejs.org/en/download/">Node</a>
 * Abrir o terminal e instalar todas as depedências, através do comando: NPM INSTALL
 * Após a instalação das depedências, executar o projeto através do comando: NPM RUN DEV
 
